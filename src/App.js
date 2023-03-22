@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import dashboard from "./dashboard";
-import MenuPages from "./Pages/Menu";
+import Dashboard from "./Pages/Dashboard/dashboard";
+import MenuPages from "./Pages/Menu/Menu";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         </a>
         <dashboard></dashboard>
       </header> */}
-      <MenuPages />
-      {/* <dashboard /> */}
+      {/* <MenuPages /> */}
+      <Dashboard />
     </div>
   );
 }

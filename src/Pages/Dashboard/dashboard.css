@@ -1,0 +1,91 @@
+.landing {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: rgb(21, 81, 100);
+  width: 100%;
+  height: 100%;
+}
+.landing .landing-left {
+  width: 8.33%;
+  height: 100%;
+}
+.landing .landing-body {
+  width: 66.67%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.landing .landing-body .landing-body-header {
+  width: 100%;
+  height: 10%;
+}
+.landing .landing-body .landing-body-content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.landing .landing-body .landing-body-content .camera-body {
+  position: relative;
+  background-color: #ffffff;
+  width: 50%;
+  height: 94%;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  margin: 1%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2000%;
+  color: #000000;
+}
+.landing .landing-body .landing-body-content .camera-top-position {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+.landing .landing-body .landing-body-content .camera-bottom-position {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+.landing .landing-body .landing-body-footer {
+  width: 100%;
+  height: 10%;
+}
+.landing .landing-right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.landing .landing-right .landing-right-top {
+  width: 100%;
+  height: 25%;
+}
+.landing .landing-right .landing-right-image {
+  width: 100%;
+  height: 50%;
+}
+.landing .landing-right .landing-right-image .img-mark {
+  width: 100%;
+  height: 100%;
+}
+.landing .landing-right .landing-right-bottom {
+  width: 100%;
+  height: 25%;
+} /*# sourceMappingURL=landing.css.map */
