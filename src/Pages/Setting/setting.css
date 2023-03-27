@@ -1,0 +1,213 @@
+.setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-image: url("../../assets/background\ _setting.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.setting .setting-header {
+  height: 15%;
+  width: 100%;
+}
+.setting .setting-body {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.setting .setting-body .setting-body-left {
+  height: 100%;
+  width: 10%;
+}
+.setting .setting-body .setting-body-content {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.67);
+  border-radius: 1.47vh;
+}
+.setting .setting-body .setting-body-content .content-margin-x {
+  height: 100%;
+  width: 10%;
+}
+.setting .setting-body .setting-body-content .content-body {
+  height: 100%;
+  width: 80%;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-title-top-space {
+  width: 100%;
+  height: 5%;
+}
+.setting .setting-body .setting-body-content .content-body .content-title {
+  width: 100%;
+  height: 7.5%;
+  color: #ffc700;
+  font-size: 4.47vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffc700;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.22));
+  border-radius: 0.376vh;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-title-bottom-space {
+  width: 100%;
+  height: 2.5%;
+}
+.setting .setting-body .setting-body-content .content-body .content-list-item {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-list-item
+  .checklist-item-input {
+  height: 80%;
+  width: 80%;
+  background-color: #ffffff;
+  border-color: hsl(0, 0%, 100%);
+  border-radius: 1.47vh;
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 2.205vh;
+  font-weight: 600;
+  text-align: center;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-list-item
+  .checklist-item-checkbox {
+  justify-content: center;
+  height: 80%;
+  width: 8%;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-list-item-space {
+  width: 100%;
+  height: 1.25%;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-comment-title-y-space {
+  width: 100%;
+  height: 2.5%;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-comment-title {
+  width: 100%;
+  height: 2.5%;
+  padding-left: 5%;
+  font-family: "Scheherazade New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.205vh;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  color: #ffc700;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-comment-input {
+  width: 94%;
+  height: 15%;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 1.47vh;
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 2.205vh;
+  font-weight: 800;
+  text-align: start;
+  padding: 3%;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-submit-top-space {
+  width: 100%;
+  height: 1.25%;
+}
+.setting .setting-body .setting-body-content .content-body .content-submit {
+  width: 100%;
+  height: 5%;
+  background: #ffc700;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.22);
+  border-radius: 1.47vh;
+  border-color: #ffee53;
+  color: rgb(21, 81, 100);
+  font-size: 1.47vh;
+}
+.setting
+  .setting-body
+  .setting-body-content
+  .content-body
+  .content-submit-bottom-space {
+  width: 100%;
+  height: 8.75%;
+}
+.setting .setting-body .setting-body-content .content-item-space {
+  width: 100%;
+  height: 5%;
+}
+.setting .setting-body .setting-body-right {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.setting .setting-body .setting-body-right .img-mark {
+  width: 40%;
+  height: 80%;
+}
+.setting .setting-footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /*# sourceMappingURL=setting.css.map */
