@@ -1,0 +1,306 @@
+.login {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../assets/background_login.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card {
+  /* Frame 1261153214 */
+  /* Auto layout */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 42px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(
+    0deg,
+    #ffffff 18.19%,
+    #b2f3ff 38.19%,
+    #33b5f1 69.3%,
+    #4e77ff 94.64%
+  );
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.login .card {
+  left: calc(50% - 292px);
+  top: calc(50% - 236px);
+  width: 500px;
+  height: 472px;
+}
+.login .card .logo {
+  height: 44px;
+}
+.login .card .logo .logo-img {
+  /* Group 4 */
+  width: 199.32px;
+  height: 66px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.login .card .title .title-main {
+  /* Frame 1261153211 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 238px;
+  height: 70px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.login .card .title .title-main .title-welcome {
+  /* Welcome back, */
+  width: 207px;
+  height: 40px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  /* Black */
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.login .card .title .title-main .title-content {
+  /* Welcome back! please enter your details. */
+  width: 238px;
+  height: 18px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #929eae;
+}
+.login .card .form {
+  /* Frame 1000003225 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 500px;
+  height: 294px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.login .card .form .form-item {
+  /* Component 2 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 500px;
+  height: 82px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.login .card .form .form-item .title {
+  /* Frame 1000003096 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 500px;
+  height: 18px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.login .card .form .form-item .input {
+  /* Search */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  width: 500px;
+  height: 52px;
+  background: rgba(243, 242, 255, 0.5);
+  border: 1px solid rgba(99, 91, 255, 0.12);
+  border-radius: 8px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.login .card .form .rmbme-n-forgetpwd {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 500px;
+  height: 22px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.login .card .form .rmbme-n-forgetpwd .select-remeber-me {
+  /* Remember me */
+  width: 125px;
+  height: 22px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.login .card .form .rmbme-n-forgetpwd .select-remeber-me .check-box {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  left: 0px;
+  top: 3px;
+  border-radius: 0px;
+}
+.login .card .form .rmbme-n-forgetpwd .select-remeber-me .remember-me-title {
+  left: 30px;
+  position: relative;
+  top: -20px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  /* Grey palette/Grey 3 */
+  color: #404252;
+}
+.login .card .form .rmbme-n-forgetpwd .forget-pwd {
+  width: 359px;
+  height: 22px;
+  text-align: right;
+}
+.login .card .form .rmbme-n-forgetpwd .forget-pwd .forget-pwd-link {
+  /* Forgot Password? */
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  color: #2563eb;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.login .card .form .login-button {
+  position: relative;
+}
+.login .card .form .login-button .button-login {
+  /* Button */
+  /* Auto layout */
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 42px;
+  width: 500px;
+  height: 48px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 8px;
+  border-color: transparent;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.login .card .form .login-button .button-login:hover {
+  background-color: #4a7deb;
+  color: rgb(250, 75, 0);
+}
+.login .card .form .login-button .button-login:active {
+  background-color: #799ce9;
+  color: rgb(250, 75, 0);
+}
+.login .to-signup {
+  height: 0;
+  width: 0;
+  top: 832px;
+  left: calc(50% - 12px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.login .to-signup .title-signup {
+  width: 254px;
+  height: 23px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #929eae;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.login .to-signup .title-signup .link-signup {
+  position: relative;
+  width: 56px;
+  height: 23px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #2563eb;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} /*# sourceMappingURL=auth.css.map */

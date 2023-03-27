@@ -1,50 +1,43 @@
-import { Col, Divider, Row } from "antd";
-import { Button, Typography } from "antd";
+import React from "react";
+import "./Menu.css";
+import ImgMark from "../../assets/white_logo.png";
+import { Button } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 
-import "./style.css";
-
-const { Title } = Typography;
-
-function MenuPages() {
+function Menu(props) {
+  const navigate = useNavigate();
   return (
-    <>
-      <Row className="total-margin">
-        <Col span={11}>
-          <Row className="menupage_left_item">
-            <Button type="primary" style={{ width: "100" }}>
-              New SBE
-            </Button>
-          </Row>
-
-          <Row className="menupage_left_item">
-            <Button type="primary" style={{ width: "100" }}>
-              Review SBE
-            </Button>
-          </Row>
-
-          <Row className="menupage_left_item">
-            <Button type="primary">Setting</Button>
-          </Row>
-
-          <Row className="menupage_left_item">
-            <Button type="primary">About Us</Button>
-          </Row>
-
-          <Row className="menupage_left_item">
-            <Title level={2} style={{ color: "#1a4450" }}>
-              Capture, communicate, and collaborate with ease.
-            </Title>
-          </Row>
-        </Col>
-
-        <Col span={1}></Col>
-
-        <Col span={12} className="menupage_right">
-          <img className="white_logo" />
-        </Col>
-      </Row>
-    </>
+    <div className="dashboard">
+      <div className="dashboard-header"></div>
+      <div className="dashboard-body">
+        <div className="dashboard-body-left"></div>
+        <div className="dashboard-body-content">
+          <Button
+            className="button-item"
+            onClick={() => navigate("/dashboard")}
+          >
+            New SBE
+          </Button>
+          <div className="content-item-space"></div>
+          <Button className="button-item">Review SBE</Button>
+          <div className="content-item-space"></div>
+          <Button className="button-item" onClick={() => navigate("/setting")}>
+            Setting
+          </Button>
+          <div className="content-item-space"></div>
+          <Button className="button-item">About Us</Button>
+        </div>
+        <div className="dashboard-body-right">
+          <img src={ImgMark} className="img-mark"></img>
+        </div>
+      </div>
+      <div className="dashboard-footer">
+        <p className="footer-text">
+          Capture, communicate, and collaborate with ease.
+        </p>
+      </div>
+    </div>
   );
 }
 
-export default MenuPages;
+export default Menu;
