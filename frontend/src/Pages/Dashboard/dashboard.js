@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { AiFillPlayCircle, AiOutlineClockCircle } from "react-icons/ai";
 import { FaStopCircle, FaPills, FaTint, FaClipboard } from "react-icons/fa";
 import {
@@ -15,9 +16,25 @@ import { IoLanguageSharp } from "react-icons/io5";
 import "./dashboard.css";
 import ImgMark from "../../assets/white_logo.png";
 import { Input } from "reactstrap";
-import ImgBG from "./../../assets/background.png";
+import JSMpeg from "@cycjimmy/jsmpeg-player";
+const ffmpegIP = "localhost";
 
 function Landing(props) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    var videoUrl = `ws://${ffmpegIP}:6789/`;
+    var player = new JSMpeg.VideoElement("#video-canvas-first", videoUrl, {
+      autoplay: true,
+    });
+    var player = new JSMpeg.VideoElement("#video-canvas-second", videoUrl, {
+      autoplay: true,
+    });
+    var player = new JSMpeg.VideoElement("#video-canvas-third", videoUrl, {
+      autoplay: true,
+    });
+  });
+
   return (
     <div className="landing">
       <div className="landing-left">
@@ -68,11 +85,23 @@ function Landing(props) {
             <div style={{ backgroundColor: "red" }}>1</div>
           </div> */}
           <div className="camera-top-position">
-            <div className="camera-body camera-first">PTZ camera 1</div>
-            <div className="camera-body camera-second">PTZ camera 1</div>
+            <div
+              className="camera-body camera-first"
+              id="video-canvas-first"
+              style={{ width: "33vw", height: "37vh" }}
+            ></div>
+            <div
+              className="camera-body camera-second"
+              id="video-canvas-second"
+              style={{ width: "33vw", height: "37vh" }}
+            ></div>
           </div>
           <div className="camera-bottom-position">
-            <div className="camera-body camera-third">PTZ camera 1</div>
+            <div
+              className="camera-body camera-third"
+              id="video-canvas-third"
+              style={{ width: "33vw", height: "37vh" }}
+            ></div>
             <div className="camera-body camera-monitor">External Monitor</div>
           </div>
         </div>
@@ -118,7 +147,10 @@ function Landing(props) {
           <img src={ImgMark} className="img-mark"></img>
         </div>
         <div className="landing-right-bottom">
-          <BsFillClipboardMinusFill className="icon-item" />
+          <BsFillClipboardMinusFill
+            className="icon-item"
+            onClick={() => navigate("/setting")}
+          />
           <div className="space-right-bottom"></div>
         </div>
       </div>

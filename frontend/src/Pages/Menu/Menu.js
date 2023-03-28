@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Menu(props) {
   const navigate = useNavigate();
+
   return (
     <div className="dashboard">
       <div className="dashboard-header"></div>
@@ -21,9 +22,7 @@ function Menu(props) {
           <div className="content-item-space"></div>
           <Button className="button-item">Review SBE</Button>
           <div className="content-item-space"></div>
-          <Button className="button-item" onClick={() => navigate("/setting")}>
-            Setting
-          </Button>
+          <Button className="button-item">Setting</Button>
           <div className="content-item-space"></div>
           <Button className="button-item">About Us</Button>
         </div>
